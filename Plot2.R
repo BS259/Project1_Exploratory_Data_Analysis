@@ -1,0 +1,5 @@
+png("plot2.png")
+plot(power$DateTime, power$Global_active_power, type = 'n', xlab = '', ylab = '', cex.axis = .8)
+title(main = '', ylab = 'Global Active Power (kilowatts)', cex.lab =  .75)
+lines(power$DateTime, power$Global_active_power)
+dev.off()
